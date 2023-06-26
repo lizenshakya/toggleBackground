@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input:checked + label + .background {
+	background:#242424;
+}
+
+.background {
+	width:100vw;
+	height: 100vh;
+	background: #fff;
+	z-index: -1;
+	position: absolute;
+	transition: 0.3s;
+}
+
+label {
+	width:500px;
+	height:200px;
+	position: relative;
+	display: block;
+	background: #ebebeb;
+	border-radius: 200px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+input {
+	visibility: hidden;
+}
+
+label p.sun {
+	left:40px;
+	fill:#fff;
+}
+label p.moon {
+	left:340px;
+	fill:#7e7e7e;
+}
+
+label p {
+	position: absolute;
+	width: 120px;
+	top:40px;
+	z-index: 100;
+}
